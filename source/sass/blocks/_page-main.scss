@@ -1,0 +1,36 @@
+.page-main {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page-main__caption {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.page-main__caption--index {
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-main__caption {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__caption {
+    width: 1220px;
+  }
+}

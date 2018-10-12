@@ -1,0 +1,90 @@
+.site-list {
+  @include reset;
+}
+
+.site-list__item a {
+  display: block;
+  padding: 22px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.site-list__item a[href] {
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 500px;
+    margin-top: 35px;
+  }
+
+  .site-list__item {
+    margin-left: 37px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .site-list__item a {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #222222;
+
+    border: none;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    margin-top: 65px;
+  }
+
+  .site-list__item a {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #ffffff;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

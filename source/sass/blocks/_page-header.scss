@@ -1,0 +1,29 @@
+.page-header {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: block;
+  min-height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-header__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    width: 1220px;
+  }
+}
