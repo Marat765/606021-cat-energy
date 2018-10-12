@@ -1,0 +1,397 @@
+.form__box,
+.form__program,
+.form__name {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form__input-label,
+.form__radio-label,
+.form__checkbox-label {
+  line-height: 18px;
+  color: #222222;
+}
+
+.form__input,
+.form__habits {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__intro {
+  margin-bottom: 40px;
+  padding-right: 60px;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form__holder {
+  margin-bottom: 28px;
+}
+
+.form__name {
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form__string {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.form__input-label {
+  flex-shrink: 0;
+  margin-right: 13px;
+}
+
+.form__input {
+  flex-grow: 1;
+  min-width: 100px;
+  padding: 12px 15px;
+  padding-bottom: 13px;
+
+  border: 1px solid #e6e6e6;
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+  &:active {
+    border: 1px solid #444444;
+  }
+}
+
+.form__program {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+
+  border: 1px solid #ededed;
+}
+
+.form__radiobox {
+  margin-bottom: 13px;
+}
+
+.form__radiobox:last-child {
+  margin-bottom: 0;
+}
+
+.form__box {
+  margin-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form__box-inner {
+  width: 280px;
+}
+
+.form__caption {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: none;
+  &::after {
+    content: "";
+
+    flex-grow: 2;
+    flex-shrink: 0;
+    width: 20px;
+    height: 3px;
+    margin-left: 3px;
+
+    background-color: $green;
+    transform: translateX(20px) translateY(14px);
+  }
+}
+
+.form__box:first-of-type .form__caption {
+  white-space: nowrap;
+  &::after {
+    width: 100px;
+
+    transform: translateX(11px) translateY(14px);
+  }
+}
+
+.form__string--box {
+  width: 280px;
+}
+
+.form__habits {
+  width: 251px;
+  min-height: 124px;
+  margin-bottom: 10px;
+  padding: 12px 14px;
+
+  border: 1px solid #e6e6e6;
+
+  resize: none;
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.form__footnote {
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .form__input-label,
+  .form__radio-label,
+  .form__checkbox-label,
+  .form__input,
+  .form__habits {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__intro {
+    margin-bottom: 65px;
+    padding-right: 350px;
+    padding-left: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__holder {
+    margin-bottom: 75px;
+  }
+
+  .form__name {
+    margin-bottom: 53px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .form__string {
+    margin-bottom: 20px;
+  }
+
+  .form__input-label {
+    margin-right: 19px;
+  }
+
+  .form__input {
+    padding: 10px 20px;
+    padding-bottom: 11px;
+
+    border: 1px solid #e6e6e6;
+  }
+
+  .form__program {
+    margin: 0 70px;
+    padding-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+  }
+
+  .form__box {
+    margin-bottom: 43px;
+    padding: 0;
+  }
+
+  .form__box-inner {
+    width: initial;
+  }
+
+  .form__caption {
+    margin-bottom: 76px;
+
+    font-size: 36px;
+    line-height: 36px;
+    &::after {
+      width: 40px;
+      margin-left: 42px;
+
+      transform: translateY(22px);
+    }
+    &::before {
+      content: "";
+
+      flex-shrink: 0;
+      width: 30px;
+      height: 3px;
+      margin-right: 40px;
+
+      background-color: $green;
+      transform: translateY(22px);
+    }
+  }
+
+  .form__caption br {
+    display: none;
+  }
+
+  .form__box:first-of-type .form__caption {
+    &::after {
+      width: auto;
+
+      transform: translateX(0px) translateY(22px);
+    }
+  }
+
+  .form__string--box {
+    width: auto;
+    padding: 0 70px;
+  }
+
+  .form__habits {
+    width: 594px;
+    min-height: 154px;
+    margin: 0 70px;
+    margin-bottom: 20px;
+    padding: 9px 18px;
+
+    line-height: 30px;
+  }
+
+  .form__inner-additional {
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .form__сheckbox-point {
+    width: 50%;
+  }
+
+  .form__container {
+    width: 630px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+  }
+
+  .form__button {
+    width: 283px;
+    margin-right: 63px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+
+  .form__footnote {
+    margin: 0;
+    padding-top: 16px;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1300px;
+  }
+
+  .form__intro {
+    margin-bottom: 65px;
+    padding-right: 910px;
+    padding-left: 40px;
+  }
+
+  .form__holder {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__name {
+    width: 570px;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .form__program {
+    width: 514px;
+    margin: 0;
+  }
+
+  .form__name  :last-child {
+    margin-bottom: 0;
+  }
+
+  .form__caption {
+    padding-left: 40px;
+
+    &::after {
+      width: 30px;
+    }
+    &::before {
+      display: none;
+    }
+  }
+
+  .form__inner-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .form__string--box {
+    width: 570px;
+    padding: 0;
+  }
+
+  .form__habits {
+    width: 1180px;
+    min-height: 152px;
+    margin: 0 40px;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+  }
+
+  .form__inner-additional {
+    width: 1220px;
+  }
+
+  .form__сheckbox-point {
+    width: 25%;
+  }
+
+  .form__container {
+    width: 1220px;
+    margin-bottom: 61px;
+  }
+
+  .form__button {
+    width: 568px;
+    margin-right: 81px;
+  }
+}

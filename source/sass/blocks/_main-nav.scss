@@ -1,0 +1,13 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+}
