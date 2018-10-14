@@ -1,5 +1,6 @@
 .food--index {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -14,6 +15,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
     }
@@ -55,6 +57,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+
   &::before {
     content: "";
     position: absolute;
@@ -118,6 +121,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+
   &::after {
     content: "";
 
@@ -179,6 +183,7 @@
     padding-left: 0;
 
     font-size: 36px;
+
     &::before {
       top: 14px;
       left: 394px;
@@ -218,6 +223,7 @@
 
     font-size: 20px;
     line-height: 20px;
+
     &::after {
       margin-left: 23px;
     }
