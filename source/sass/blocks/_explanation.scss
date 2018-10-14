@@ -27,6 +27,7 @@
   font-family: "Arial", sans-serif;
   color: #444444;
   text-transform: none;
+
   &::before {
     content: "";
 
@@ -111,15 +112,15 @@
 
     font-size: 16px;
     line-height: 24px;
+
     &::before {
       width: 80px;
       height: 80px;
       margin-right: 20px;
       margin-bottom: 33px;
     }
-  }
 
-  .explanation__item {
+
     position: relative;
 
     &::after {
@@ -151,6 +152,7 @@
 
     font-size: 16px;
     line-height: 24px;
+
     &::before {
       width: 80px;
       height: 80px;

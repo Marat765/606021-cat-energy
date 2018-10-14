@@ -59,6 +59,7 @@
   padding-top: 80px;
 
   text-align: center;
+
   &::before,
   &::after {
     content: "";
@@ -71,6 +72,7 @@
 
     background-color: #d3d3d3;
   }
+
   &::before {
     transform: rotate(90deg);
   }
@@ -192,6 +194,7 @@
 
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
+
     &::before,
     &::after {
       top: 83px;
@@ -218,6 +221,7 @@
 
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
+
     &::before,
     &::after {
       top: 84px;
