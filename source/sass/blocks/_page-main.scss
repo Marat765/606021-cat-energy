@@ -4,6 +4,9 @@
 }
 
 .page-main__caption {
+  margin-bottom: 37px;
+  padding-left: 20px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -11,10 +14,21 @@
 }
 
 .page-main__caption--index {
-  text-align: center;
   margin-top: 27px;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
+  padding-left: 0px;
+
+  text-align: center;
   color: #ffffff;
+}
+
+.page-main__caption--catalog {
+  margin-top: 28px;
+  margin-bottom: 39px;
+}
+
+.page-main__caption--form {
+  margin-top: 27px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,11 +40,52 @@
   .page-main__caption {
     width: 708px;
     margin: 0 auto;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__caption--index {
+    transform: translateX(-53px);
+    width: 427px;
+    // font-size: 60px;
+    // line-height: 60px;
+    text-align: left;
+    color: #111111;
+    margin-bottom: 42px;
+  }
+
+  .page-main__caption--catalog {
+    margin-top: 56px;
+    margin-bottom: 164px;
+    padding-left: 0;
+  }
+
+  .page-main__caption--form {
+    margin-top: 55px;
+    padding-left: 0;
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__caption {
     width: 1220px;
+  }
+
+  .page-main__caption--index {
+    transform: translateX(-315px) translateY(115px);
+    width: 427px;
+    text-align: left;
+    margin-bottom: 157px;
+  }
+
+  .page-main__caption--catalog {
+    margin-top: 76px;
+    margin-bottom: 164px;
+  }
+
+  .page-main__caption--form {
+    margin-top: 76px;
+    margin-bottom: 57px;
   }
 }

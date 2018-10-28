@@ -12,36 +12,46 @@
 <body>
   <header class="page-header" role="banner">
     <div class="page-header__inner">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="15" height="10" alt="Логотип">
-        <b class="visually-hidden  page-header__logo-text">Cat Energy</b>
-      </a>
-      <nav class="main-nav" role="navigation">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - логотип" width="191" height="38">
+          </picture>
+        </a>
+        <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="site-list  main-nav__list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item  site-list__item--active">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs" role="navigation">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item ">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+
   <main class="page-main" role="main">
-    <h1 class="page-main__caption">Каталог продукции</h1>
+    <h1 class="page-main__caption page-main__caption--catalog">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Основные товары</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -66,7 +76,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy Pro 1000 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -91,7 +105,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy Pro 500 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -116,7 +134,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Pro 1000 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -141,7 +163,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -166,7 +192,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -191,7 +221,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link-img" href="#">
-            <img src="#" width="50" height="50" alt="Изображение товара">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 г">
+            </picture>
           </a>
           <div class="catalog__box">
             <h3 class="catalog__link-caption">
@@ -222,7 +256,11 @@
       </ul>
     </section>
     <section class="additional">
-      <h2 class="additional__caption">Дополнительные товары</h2>
+      <div class="subtitle">
+        <div class="subtitle__wrapper">
+          <h2 class="additional__caption subtitle__text">Дополнительные товары</h2>
+        </div>
+      </div>
       <div class="additional__inner">
         <ul class="additional__list">
           <li class="additional__item">
@@ -267,44 +305,86 @@
           </li>
         </ul>
         <div class="additional__order-all">
+          <svg class="additional__icon" width="60" height="60">
+            <path d="M52.3 12.2h-7c.5-.7.8-1.4 1.1-2.2.6-2 .4-4.1-.6-5.9-1-1.8-2.6-3.1-4.6-3.7-2-.6-4.1-.4-5.9.6-3.6 2-6.2 6.1-7.6 9-1.4-2.9-4-7.1-7.6-9-3.8-2-8.5-.6-10.5 3.1-1.4 2.7-1.2 5.8.5 8.1h-7c-1.7 0-3.1 1.4-3.1 3.1v9.4c0 1.7 1.4 3.1 3.1 3.1H4v26.1c0 3.3 2.7 6 6 6h35.5c3.3 0 6-2.7 6-6V27.8h.8c1.7 0 3.1-1.4 3.1-3.1v-9.4c.1-1.7-1.3-3.1-3.1-3.1zM36.5 3c1.3-.7 2.7-.8 4.1-.4 1.3.4 2.4 1.3 3.1 2.6.7 1.3.8 2.7.4 4.1-.4 1.2-1.1 2.2-2.2 2.9H29.4C30.5 9.6 33 5 36.5 3zM11.7 5.2C13.2 2.6 16.4 1.6 19 3c3.5 1.9 6 6.6 7.1 9.1H13.5c-2.3-1.4-3.1-4.5-1.8-6.9zm14.8 22.6v13.7H6.4V27.8h20.1zM6.4 53.9v-10h20.2v13.7H10c-2 0-3.6-1.7-3.6-3.7zm39.1 3.7H28.9V43.9h20.2v10c0 2-1.6 3.7-3.6 3.7zm3.6-16.1H28.9V27.8h20.2v13.7zm4-16.8c0 .4-.3.7-.7.7H3.2c-.4 0-.7-.3-.7-.7v-9.4c0-.4.3-.7.7-.7h49.2c.4 0 .7.3.7.7v9.4z" fill="white"></path>
+          </svg>
           Закажите все
           <br>и получите чехол для кота в подарок!</div>
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
-    <div class="address page-footer__address">
-      <div class="address__text">
-        <b class="address__invitation">Приглашаем<br>к сотрудничеству дилеров!</b>
-        <div class="address__content">
-          <p class="address__line  address__line--1">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__line  address__line--2">Санкт-Петербург</p>
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Как нас найти:</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__company">
+          <b class="contacts__title">приглашаем <br> к сотрудничеству дилеров!</b>
+          <p class="contacts__company-address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            <span class="contacts__company-address-city">Санкт-Петербург</span>
+          </p>
         </div>
       </div>
-      <div class="address__map"></div>
-    </div>
-    <div class="page-footer__bottom">
-      <div class="page-footer__wrap-index">
-        <a class="page-footer__link-index" href="index.html">Cat Energy</a>
+      <div class="contacts__map">
+        <div class="contacts__map-google-wrapper">
+          <iframe class="contacts__map-google" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2970836258144!2d30.3219997!3d59.9388761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1526233818772" width="600" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+        <a class="contacts__map-link" href="https://goo.gl/maps/NqmwzRBr9Y22" target="_blank">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </a>
       </div>
-      <div class="social  page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright  page-footer__copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </section>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__inner">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link page-footer__logo-title" href="index.html">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy - логотип">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
+                <svg class="social__icon social__icon--vk" width="22" height="12">
+                  <use xlink:href="#sprite-icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
+                <svg class="social__icon social__icon--insta" width="16" height="16">
+                  <use xlink:href="#sprite-icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+                <svg class="social__icon social__icon--fb" width="10" height="19">
+                  <use xlink:href="#sprite-icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyrights copyrights">
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyrights__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyrights__logo-image" width="27" height="34">
+              <use xlink:href="#sprite-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

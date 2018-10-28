@@ -5,6 +5,7 @@
 }
 
 .explanation__caption {
+  margin-top: 0;
   margin-bottom: 27px;
 
   font-weight: 400;
@@ -37,7 +38,7 @@
     height: 60px;
     margin-right: 20px;
 
-    background-color: $green;
+    background-color: $bg-green;
   }
 }
 
@@ -88,6 +89,7 @@
 @media (min-width: $tablet-width) {
   .explanation {
     width: 708px;
+    margin-bottom: 0px;
   }
 
   .explanation__caption {

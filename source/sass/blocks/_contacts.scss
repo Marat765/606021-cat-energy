@@ -1,0 +1,184 @@
+.contacts {
+  padding-top: 28px;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contacts__company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.contacts__title {
+  width: 45%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts__company-address {
+  width: 50%;
+  margin: 0;
+  text-transform: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.contacts__map {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 362px;
+}
+
+.contacts__map-google-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+}
+
+.contacts__map-google {
+  width: 100%;
+  height: 362px;
+}
+
+.contacts__map-link {
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: $bg-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 138px;
+    left: 129px;
+
+    width: 62px;
+    height: 53px;
+
+    background-color: transparent;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 63px;
+
+    background-color: $bg-grey;
+
+    &--index-page {
+      background-color: $bg-white;
+    }
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+
+  .contacts__map-google {
+    height: 400px;
+  }
+
+  .contacts__map-link::before {
+    top: 138px;
+    left: 129px;
+
+    width: 124px;
+    height: 106px;
+  }
+
+  .contacts__wrapper {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .contacts__company {
+    margin-bottom: 57px;
+    padding-right: 42px;
+    padding-left: 40px;
+  }
+
+  .contacts__title {
+    width: 170px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__company-address {
+    width: 170px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__company-address-city {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 0;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    z-index: 50;
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .contacts__company {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+
+    width: 570px;
+    padding-top: 63px;
+    padding-right: 74px;
+    padding-bottom: 58px;
+    padding-left: 76px;
+
+    background-color: $bg-white;
+  }
+
+  .contacts__map-link::before {
+    top: 151px;
+    right: 318px;
+    left: auto;
+  }
+
+  .contacts__map-image {
+    margin: 0;
+  }
+
+  .contacts__company-address {
+    text-align: left;
+  }
+}
