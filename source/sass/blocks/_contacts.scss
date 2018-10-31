@@ -28,12 +28,12 @@
 .contacts__company-address {
   width: 50%;
   margin: 0;
-  text-transform: none;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   font-family: "Arial", sans-serif;
+  text-transform: none;
 }
 
 .contacts__map {
@@ -150,6 +150,7 @@
   .contacts__wrapper {
     position: relative;
     z-index: 50;
+
     width: 1300px;
     padding: 0 40px;
   }

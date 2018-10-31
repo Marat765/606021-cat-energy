@@ -17,12 +17,13 @@
 }
 
 .address__line {
+  margin: 0;
+
   font-size: 14px;
   line-height: 20px;
   font-family: "Arial", sans-serif;
   color: #444444;
   text-transform: none;
-  margin: 0;
 }
 
 .address__line:first-child {

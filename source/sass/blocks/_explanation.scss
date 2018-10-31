@@ -89,7 +89,7 @@
 @media (min-width: $tablet-width) {
   .explanation {
     width: 708px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .explanation__caption {
@@ -110,7 +110,7 @@
     display: initial;
     width: 255px;
     margin-right: 69px;
-    margin-bottom: 134px;
+    margin-bottom: 132px;
 
     font-size: 16px;
     line-height: 24px;

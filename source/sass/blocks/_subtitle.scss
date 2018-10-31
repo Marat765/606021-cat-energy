@@ -1,23 +1,24 @@
 .subtitle {
+  position: relative;
+
+  display: flex;
   margin: 0 auto;
   margin-bottom: 34px;
-  display: flex;
-  position: relative;
+
   text-transform: none;
 
   &::after {
     content: "";
-    display: block;
-
     position: absolute;
     left: 0;
-
-    margin-top: 13px;
-    height: 3px;
-    width: $mobile-width;
-    background-color: $bg-green;
-
     z-index: -1;
+
+    display: block;
+    width: $mobile-width;
+    height: 3px;
+    margin-top: 13px;
+
+    background-color: $bg-green;
   }
 }
 
@@ -28,23 +29,21 @@
 }
 
 .subtitle__wrapper {
-  padding: 0;
-
   display: flex;
   justify-content: flex-start;
+  padding: 0;
 }
 
 .subtitle__text {
-  padding-left: 20px;
-  padding-right: 20px;
-
   margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400;
-
   color: #000000;
+
   background-color: $bg-white;
 }
 
@@ -54,27 +53,29 @@
   }
 
   .subtitle__wrapper {
+    width: 768px;
     margin: 0 auto;
     padding: 0 30px;
-    width: 768px;
   }
 
   .subtitle__text {
-    padding-left: 38px;
     padding-right: 40px;
+    padding-left: 38px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
   .subtitle::after {
-    margin-top: 22px;
     width: 100%;
+    margin-top: 22px;
   }
 
   .subtitle--form {
     position: static;
+
     margin-bottom: 75px;
+
     &::after {
       width: 100vw;
     }
@@ -91,11 +92,7 @@
     padding: 0;
   }
 
-  // .subtitle::after {
-  //   width: 1440px;
-  // }
-
   .subtitle__text {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }

@@ -16,7 +16,7 @@
 .page-main__caption--index {
   margin-top: 27px;
   margin-bottom: 22px;
-  padding-left: 0px;
+  padding-left: 0;
 
   text-align: center;
   color: #ffffff;
@@ -40,18 +40,19 @@
   .page-main__caption {
     width: 708px;
     margin: 0 auto;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .page-main__caption--index {
-    transform: translateX(-53px);
     width: 427px;
-    // font-size: 60px;
-    // line-height: 60px;
+    margin-bottom: 42px;
+
     text-align: left;
     color: #111111;
-    margin-bottom: 42px;
+
+    transform: translateX(-53px);
   }
 
   .page-main__caption--catalog {
@@ -62,8 +63,8 @@
 
   .page-main__caption--form {
     margin-top: 55px;
-    padding-left: 0;
     margin-bottom: 55px;
+    padding-left: 0;
   }
 }
 
@@ -73,10 +74,12 @@
   }
 
   .page-main__caption--index {
-    transform: translateX(-315px) translateY(115px);
     width: 427px;
-    text-align: left;
     margin-bottom: 157px;
+
+    text-align: left;
+
+    transform: translateX(-315px) translateY(115px);
   }
 
   .page-main__caption--catalog {

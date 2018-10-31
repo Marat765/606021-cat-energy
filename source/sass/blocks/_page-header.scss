@@ -1,17 +1,16 @@
 .page-header__wrapper {
-  margin: 0 auto;
-  padding-top: 11px;
-  padding-bottom: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-bottom: 1px solid #e6e6e6;
-
-  width: 320px;
-
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo[href] {
@@ -26,19 +25,19 @@
 }
 
 .page-header__menu-toggle {
-  padding: 0;
-  margin: 0;
-  margin-right: 3px;
-
   display: block;
   width: 18px;
   height: 18px;
+  margin: 0;
+  margin-right: 3px;
+  padding: 0;
 
-  border: none;
   background-color: transparent;
+  border: none;
 
   &--close::before {
     content: "";
+
     display: block;
     width: 18px;
     height: 18px;
@@ -55,6 +54,7 @@
 
   &--open::before {
     content: "";
+
     display: block;
     width: 24px;
     height: 18px;
@@ -68,18 +68,15 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 0 auto;
-
-    padding-top: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 36px;
-
-    width: 768px;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .page-header--index {
@@ -87,16 +84,16 @@
   }
 
   .page-header__inner {
-    margin-right: auto;
     flex-shrink: 0;
+    margin-right: auto;
   }
 
   .page-header__wrapper {
+    width: auto;
     margin: 0;
     padding: 0;
-    border: none;
 
-    width: auto;
+    border: none;
   }
 
   .page-header__menu-toggle {
@@ -106,45 +103,17 @@
   .page-header__logo {
     width: 173px;
     height: 58px;
-
     padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 62px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 44px;
-
     width: 1300px;
-
-
-    // &--index-page::before {
-    //   content: "";
-
-    //   position: absolute;
-    //   right: 0;
-    //   top: 0;
-
-    //   width: 50%;
-    //   height: 696px;
-
-    //   background-color: #64a83b;
-
-    //   z-index: -2;
-
-    //   background-image: url("../img/index-background-desktop@1x.jpg");
-    //   background-repeat: no-repeat;
-    //   background-position: right top;
-
-
-    //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //     background-image: url("../img/index-background-desktop@2x.jpg");
-    //     background-size: 720px 696px;
-    //   }
-    // }
+    margin-bottom: 44px;
+    padding-top: 62px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .page-header--index {
@@ -152,10 +121,10 @@
   }
 
   .page-header__logo {
-    margin-top: -9px;
-    padding: 0;
     width: 202px;
     height: 59px;
+    margin-top: -9px;
+    padding: 0;
   }
 
   .page-header__logo-image {
