@@ -132,8 +132,12 @@
     border: 1px solid #444444;
   }
 
-  &--error {
-    border: 1px solid #ff8282;
+  &:invalid:not(:empty) {
+    border-color: #ff8282;
+  }
+
+  &:invalid:focus {
+    border-color: #ff8282;
   }
 }
 
@@ -203,6 +207,18 @@
 
   width: 20px;
   height: 20px;
+}
+
+.form__input:active + .form__field-icon {
+  fill: #68b738;
+}
+
+.form__input:invalid:not(:empty) + .form__field-icon {
+  fill: #ff8282;
+}
+
+.form__input:invalid:focus + .form__field-icon {
+  fill: #ff8282;
 }
 
 .form__habits {
