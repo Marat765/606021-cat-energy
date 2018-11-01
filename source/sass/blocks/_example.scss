@@ -21,7 +21,7 @@
 }
 
 .example__text {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding-right: 10px;
 
   font-size: 14px;
@@ -34,7 +34,7 @@
 .example__holder {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .example__item {
@@ -121,7 +121,7 @@
   width: 86px;
   height: 13px;
   margin: 0;
-  margin-right: 15px;
+  margin-right: 17px;
   margin-left: 17px;
 
   background-color: #ffffff;
@@ -134,7 +134,8 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  transform: translateX(4px);
 }
 
 .example__switch {
@@ -309,6 +310,11 @@
     }
   }
 
+  .example__control {
+    transform: translateX(0);
+    margin-bottom: 15px;
+  }
+
   .example__range {
     width: 428px;
     height: 6px;
@@ -405,10 +411,11 @@
 
   .example__box {
     margin-bottom: 35px;
+    width: 530px;
   }
 
   .example__stats {
-    display: flex;
+    max-width: 600px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
