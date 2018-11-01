@@ -181,7 +181,28 @@
 }
 
 .form__string--box {
+  position: relative;
   width: 280px;
+}
+
+.form__field-icon {
+  position: absolute;
+}
+
+.form__field-icon--mail {
+  right: 14px;
+  top: 15px;
+
+  width: 21px;
+  height: 14px;
+}
+
+.form__field-icon--phone {
+  top: 13px;
+  right: 14px;
+
+  width: 20px;
+  height: 20px;
 }
 
 .form__habits {
@@ -422,6 +443,12 @@
     padding: 0 70px;
   }
 
+  .form__field-icon--phone,
+  .form__field-icon--mail {
+    top: 19px;
+    right: 84px;
+  }
+
   .form__habits {
     width: 631px;
     min-height: 174px;
@@ -523,6 +550,12 @@
   .form__string--box {
     width: 570px;
     padding: 0;
+  }
+
+  .form__field-icon--phone,
+  .form__field-icon--mail {
+    top: 19px;
+    right: 20px;
   }
 
   .form__habits {
