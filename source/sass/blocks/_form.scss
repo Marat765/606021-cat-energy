@@ -245,10 +245,6 @@
   }
 }
 
-.form__checkbox:focus ~ .form__checkbox-label::before {
-  border: 1px solid #bababa;
-}
-
 .form__checkbox:checked ~ .form__checkbox-label {
   &::before {
     background-image: url("../img/icon-tick.svg");
@@ -262,8 +258,9 @@
   }
 }
 
-.form__checkbox:focus:checked ~ .form__checkbox-label::before {
-  border: 1px solid #bababa;
+.form__checkbox:focus ~ .form__checkbox-label::before {
+  outline: 1px solid #0066ff;
+  outline-offset: 5px;
 }
 
 .form__container {
