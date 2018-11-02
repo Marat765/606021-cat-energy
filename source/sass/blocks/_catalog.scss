@@ -135,7 +135,7 @@
   .catalog__item {
     flex-direction: column;
     width: 325px;
-    margin-bottom: 141px;
+    margin-bottom: 142px;
     padding: 0 38px 40px 38px;
 
     background-color: $bg-grey;
@@ -169,7 +169,7 @@
 
   .catalog__link-caption {
     width: 150px;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 16px auto;
 
     text-align: center;
   }
@@ -190,7 +190,7 @@
 
   .catalog__field,
   .catalog__value {
-    padding-top: 10px;
+    padding-top: 9px;
     padding-bottom: 10px;
   }
 
@@ -235,6 +235,10 @@
 
   .catalog__item {
     width: 245px;
+  }
+
+  .catalog__link-caption {
+    margin-bottom: 18px;
   }
 
   .catalog__subtitle {
